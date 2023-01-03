@@ -1,0 +1,24 @@
+{
+  "name": "yeelight-controller",
+  "version": "1.0.0",
+  "description": "CLI commands to control Yeelights via Node",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tsc-watch",
+    "dev:toggle": "npx tsc-watch -w --onSuccess 'node dist/toggle.js --ipAddress=192.168.1.106'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patrick Shelley",
+  "license": "ISC",
+  "dependencies": {
+    "tsc": "^2.0.4",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^4.9.4",
+    "yargs": "^17.6.2",
+    "yeelight-node": "^1.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/yargs": "^17.0.18"
+  }
+}
